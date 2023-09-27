@@ -1,55 +1,56 @@
 variable "resource_group_name" {
     type= string
-    default = ""
+    default = "disk-resource-group"
 }
 
 variable "location" {
     type= string
-    default = ""
+    default = "eastus"
 }
 
 
 variable "key-vault-name" {
     type= string
-    default = ""
+    default = "diskkeyvault"
 }
 
 
 variable "sku-name" {
     type= string
-    default = ""
+    default = "premium"
 }
 
 
 variable "key-vault-key" {
     type= string
-    default = ""
+    default = "disk-key-vault-key"
 }
 
 variable "disk_encryption_set" {
     type= string
-    default = ""
+    default = "disk"
 }
 
 
 variable "enabled_for_disk_encryption" {
     type= string
-    default = ""
+    default = true
 }
 
 
 variable "purge_protection_enabled" {
     type= string
-    default = ""
+    default = true
 }
 
 variable "key_type" {
     type= string
-    default = ""
+    default = "RSA"
 }
 
 variable "key_size" {
     type= number
+    default = 2048
 }
 
 
